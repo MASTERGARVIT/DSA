@@ -6,8 +6,7 @@ class Solution {
         solve(n, 0, 0, "", ans);
         return ans;
     }
-    void solve(int n, int open, int close,
-               String temp, List<String> ans) {
+    void solve(int n, int open, int close, String temp, List<String> ans) {
         if (open == n && close == n) {
             ans.add(temp);
             return;
