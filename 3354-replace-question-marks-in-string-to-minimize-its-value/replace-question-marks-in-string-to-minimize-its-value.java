@@ -23,10 +23,10 @@ class Solution {
             rep[i] = (char) ('a' + minidx);
             freq[minidx]++;
         }
+
         java.util.Arrays.sort(rep);
         StringBuilder ans = new StringBuilder();
         int index =0;
-
         for(char c : s.toCharArray()){
             if(c == '?'){
                 ans.append(rep[index++]);
